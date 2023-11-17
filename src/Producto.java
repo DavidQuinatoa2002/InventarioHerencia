@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Producto {
@@ -23,6 +24,7 @@ public class Producto {
 
 
 ///sobreesritura de metodos
+
     public void ingresarProducto(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el nombre del producto: ");
@@ -33,8 +35,19 @@ public class Producto {
         this.codigo = sc.next();
         System.out.println("Ingrese la cantidad: ");
         this.cantidad = sc.nextInt();
+        System.out.println("Ingrese la marca: ");
+        this.marca = sc.next();
    
     }
+
+    public void imprimirProducto(){
+        System.out.println("EL nombre del producto es: "+nombre);
+        System.out.println("El precio del produco es: "+precio);
+        System.out.println("El codigo del producto es: "+codigo);
+        System.out.println("La cantidad del producto es: "+cantidad);
+    }
+
+
 
 
 

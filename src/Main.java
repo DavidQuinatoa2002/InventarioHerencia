@@ -9,11 +9,27 @@ public class Main {
         //aqui usa la sobreeescritura del metodo del override del producto
         Alimento a1 = new Alimento();
         a1.ingresarProducto();
+        a1.imprimirProducto();
 
 
         //aqui solo usa del producto
+        //Electrodomestico e1 = new Electrodomestico("Lavadora", 120, "LAV0001", 500, "Mabe", 10,
+        //                "China", 10, "2 años");
+
         Electrodomestico e1 = new Electrodomestico();
         e1.ingresarProducto();
+        e1.imprimirProducto();
+
+
+        //
+        Tecnologia t1 = new Tecnologia();
+        t1.ingresarProducto();
+        t1.imprimirProducto();
+
 
     }
 }
+
+
+
+//to string es un mtodo base d la clase adi no definamos

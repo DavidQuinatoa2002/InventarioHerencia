@@ -51,19 +51,17 @@ public class Alimento extends Producto{
     @Override
     public void ingresarProducto(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese el nombre del producto: ");
-        this.nombre = sc.next();
-        System.out.println("Ingrese el precio: ");
-        this.precio =sc.nextDouble();
-        System.out.println("Ingrese el codigo: ");
-        this.codigo = sc.next();
-        System.out.println("Ingrese la cantidad: ");
-        this.cantidad = sc.nextInt();
-        System.out.println("Ingrese la marca: ");
-        this.marca = sc.next();
-        System.out.println("Ingrese la fecha de elaboracion del producto:");
+        System.out.println("Ingrese la fecha de elaboracion del alimento:");
         this.fechaElaboracion = sc.next();
-        System.out.println("Ingrese la fecha de expiracion del producto:");
+        System.out.println("Ingrese la fecha de expiracion del alimento:");
         this.fechaExpiracion = sc.next();
+    }
+
+    @Override
+    public void imprimirProducto(){
+       // Scanner sc = new Scanner(System.in);
+        System.out.println("la fecha de elaboracion del alimento:"+fechaElaboracion);
+        System.out.println(" la fecha de expiracion del alimento:"+fechaExpiracion);
+
     }
 }
